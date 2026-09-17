@@ -2,6 +2,7 @@
 import unittest
 from calculator.calculator import Calculator
 
+
 class TestCalculator(unittest.TestCase):
     """Tests for the Calculator class."""
 
@@ -24,6 +25,15 @@ class TestCalculator(unittest.TestCase):
     def test_subtract_zero(self):
         """Test subtraction resulting in zero."""
         self.assertEqual(self.calc.subtract(5, 5), 0)
+
+    def test_multiply_basic(self):
+        """Test basic multiplication."""
+        self.assertEqual(self.calc.multiply(3, 5), 15)
+
+    def test_divide_basic(self):
+        """Test basic division."""
+        self.assertEqual(self.calc.divide(11, 2), 5.5)
+
 
 if __name__ == '__main__':
     unittest.main()

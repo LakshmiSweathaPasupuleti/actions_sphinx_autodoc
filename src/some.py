@@ -4,7 +4,7 @@ class Some:
     """
     def __init__(self):
         pass
-    
+
     def example_method(self, x: int, y: int) -> int:
         """
         An example method that adds two integers.
